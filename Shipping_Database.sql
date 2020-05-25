@@ -3,6 +3,7 @@
 ---------------------------------------------------------------
 -- ÑREATE TABLE AND PK
 ---------------------------------------------------------------
+/*
 CREATE TABLE Order_Data(  
 	Order_ID						INTEGER		NOT NULL,
 	Departure_Address				VARCHAR(50) NOT NULL,
@@ -53,8 +54,9 @@ CONSTRAINT	Transporter_Ship_PK PRIMARY KEY (Ship_ID)
 ;
 
 CREATE TABLE Position(
-	Employee_ID						INTEGER		NOT NULL,
+	Position_ID						INTEGER		NOT NULL,
 	Position_Name					VARCHAR(20)	NOT NULL,
+CONSTRAINT Position_PK PRIMARY KEY (Position_ID)
 )
 ;
 
@@ -68,12 +70,13 @@ CREATE TABLE Employee_Data(
 	Work_Phone						VARCHAR(20)	NOT NULL,
 	Work_Mail						VARCHAR(20)	NOT NULL,
 	Company_ID						INTEGER		NOT NULL,
+	Position_ID						INTEGER		NOT NULL,
 CONSTRAINT Employee_Data_PK PRIMARY KEY (Employee_ID)
 )
 ;
 CREATE TABLE Performer_Company(
 	Company_ID						INTEGER		NOT NULL,
-	Company_Name					VARCHAR		NOT NULL,
+	Company_Name					VARCHAR(20)	NOT NULL,
 	IPO								VARCHAR(5)	NOT NULL,
 	Office_Address					VARCHAR(50)	NOT NULL,
 	Number_Phone					VARCHAR(20)	NOT NULL,				
@@ -112,12 +115,14 @@ ALTER TABLE Transporter_Ship ADD CONSTRAINT FK_Transporter_Ship_Performer_Compan
 	REFERENCES Performer_Company(Company_ID)
 ;
 
-ALTER TABLE Employee_Data ADD CONSTRAINT FK_Employee_Data_Performer_Company
-	FOREIGN KEY (Company_ID)
-	REFERENCES Performer_Company(Company_ID)
+ALTER TABLE Employee_Data ADD FOREIGN KEY (Company_ID)
+	REFERENCES Performer_Company(Company_ID) ON DELETE CASCADE;
+
+;
+ALTER TABLE Employee_Data ADD CONSTRAINT FK_Employee_Data_Position
+	FOREIGN KEY (Position_ID)
+	REFERENCES Position(Position_ID)
 ;
 
-ALTER TABLE Position ADD CONSTRAINT FK_Position_Employee_Data
-	FOREIGN KEY (Employee_ID)
-	REFERENCES Employee_Data(Employee_ID)
-;
+
+*/
