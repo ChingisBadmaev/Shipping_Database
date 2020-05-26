@@ -1,4 +1,4 @@
--- CREATE DATABASE SHIPPING
+	-- CREATE DATABASE SHIPPING
 
 ---------------------------------------------------------------
 -- ÑREATE TABLE AND PK
