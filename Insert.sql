@@ -40,7 +40,6 @@ INSERT INTO Performer_Company(Company_ID, Company_Name, IPO, Office_Address, Num
 INSERT INTO Performer_Company(Company_ID, Company_Name, IPO, Office_Address, Number_Phone, Site_Link, EMail)	
 			VALUES(5, 'AfkNeStoi', 'No', 'Nyepir, TheRoyalSun', 5550087789779, 'TheRoyalSun.org', 'TheRoyalSun@mail.com');
 
-
 --INSERT TO TABLES Position
 
 INSERT INTO Position(Position_ID, Position_Name)	VALUES (1, 'CEO');
@@ -314,4 +313,25 @@ INSERT INTO Employee_Data(Employee_ID, First_Name, Last_Name, General_Experience
 		
 INSERT INTO Employee_Data(Employee_ID, First_Name, Last_Name, General_Experience, Position_Experience, Residence_Address, Work_Phone, Work_Mail, Company_ID, Position_ID)
 		VALUES (83, 'Bianca', 'Santos', 5, 2, 'Rio de Janeiro, Shinnofwa street', 0211302125, 'B.Santos@gmail.com', 5, 10);
+		
+		
+--INSERT TO TABLES Transporter_Ship
+--C = Container Ship
+--T =Tanker
+INSERT INTO Transporter_Ship(Ship_ID, Ship_Name, Ship_Type, Decks_Number, Containers_Maximum_Number, Carrying, Company_ID)
+		VALUES (1, 'Lamai', 'Ñ', 1, 10000, 11000000, 1)
+		
+INSERT INTO Transporter_Ship(Ship_ID, Ship_Name, Ship_Type, Decks_Number, Containers_Maximum_Number, Carrying, Company_ID)
+		VALUES (2, 'Dayrel', 'Ñ', 1, 12500, 14700000, 2)
+		
+INSERT INTO Transporter_Ship(Ship_ID, Ship_Name, Ship_Type, Decks_Number, Containers_Maximum_Number, Carrying, Company_ID)
+		VALUES (3, 'Talaio', 'T', 2, 0, 318000000, 3)
+		
+INSERT INTO Transporter_Ship(Ship_ID, Ship_Name, Ship_Type, Decks_Number, Containers_Maximum_Number, Carrying, Company_ID)
+		VALUES (4, 'Good News', 'T', 7, 0, 265000000, 4)
+		
+INSERT INTO Transporter_Ship(Ship_ID, Ship_Name, Ship_Type, Decks_Number, Containers_Maximum_Number, Carrying, Company_ID)
+		VALUES (5, 'Veronoopa', 'C', 2, 15000, 13800000, 5)
 
+INSERT INTO Transporter_Ship(Ship_ID, Ship_Name, Ship_Type, Decks_Number, Containers_Maximum_Number, Carrying, Company_ID)
+		VALUES (6, 'Ainola', 'C', 2, 14200, 11100000, 5)
