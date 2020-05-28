@@ -16,11 +16,6 @@ INSERT INTO Client_Data(Client_ID, First_Name, Last_Name, Email, Phone)		VALUES(
 INSERT INTO Client_Data(Client_ID, First_Name, Last_Name, Email, Phone)		VALUES(4, 'Timur', 'Zinnatulin', 'Timur.Zinnatulin@mail.ru', 89911235468);
 INSERT INTO Client_Data(Client_ID, First_Name, Last_Name, Email, Phone)		VALUES(5, 'Nikita', 'Kovalev', 'NikitaKovalev@mail.ru', 89124654871);
 INSERT INTO Client_Data(Client_ID, First_Name, Last_Name, Email, Phone)		VALUES(6, 'Egor', 'Korolev', 'EgorKorolev@mail.ru', 89554913570);
-INSERT INTO Client_Data(Client_ID, First_Name, Last_Name, Email, Phone)		VALUES(7, 'Mac`Quxa', 'Ilya', 'Ilya.Mac`Quxa@mail.ru', 89290022150);
-INSERT INTO Client_Data(Client_ID, First_Name, Last_Name, Email, Phone)		VALUES(8, 'Ekaterina', 'Krutaya', 'Ekaterina.Krutaya@mail.ru', 89918465987);
-INSERT INTO Client_Data(Client_ID, First_Name, Last_Name, Email, Phone)		VALUES(9, 'Alexander', 'Semenov', 'Alexander.Semenov@mail.ru', 89918465987);
-INSERT INTO Client_Data(Client_ID, First_Name, Last_Name, Email, Phone)		VALUES(10, 'Vladimir', 'Petrov', 'Vladimir.Petrov.@mail.ru', 89991354462);
-INSERT INTO Client_Data(Client_ID, First_Name, Last_Name, Email, Phone)		VALUES(11, 'Akokii', 'Mirtu', 'Akokii.Mirtu@mail.ru', 89001212303);
 
 
 --INSERT TO TABLES Performer_Company
@@ -39,6 +34,7 @@ INSERT INTO Performer_Company(Company_ID, Company_Name, IPO, Office_Address, Num
 
 INSERT INTO Performer_Company(Company_ID, Company_Name, IPO, Office_Address, Number_Phone, Site_Link, EMail)	
 			VALUES(5, 'AfkNeStoi', 'No', 'Nyepir, TheRoyalSun', 5550087789779, 'TheRoyalSun.org', 'TheRoyalSun@mail.com');
+
 
 --INSERT TO TABLES Position
 
@@ -266,7 +262,6 @@ INSERT INTO Employee_Data(Employee_ID, First_Name, Last_Name, General_Experience
 INSERT INTO Employee_Data(Employee_ID, First_Name, Last_Name, General_Experience, Position_Experience, Residence_Address, Work_Phone, Work_Mail, Company_ID, Position_ID)
 		VALUES (68, 'Evelin', 'Jakota', 1, 1, 'Sidney, Everqo street', 0245699037, 'E.Jacota@gmail.com', 4, 7);
 
-
 ------------------------------Company_ID = 5
 
 INSERT INTO Employee_Data(Employee_ID, First_Name, Last_Name, General_Experience, Position_Experience, Residence_Address, Work_Phone, Work_Mail, Company_ID, Position_ID)
@@ -314,15 +309,14 @@ INSERT INTO Employee_Data(Employee_ID, First_Name, Last_Name, General_Experience
 INSERT INTO Employee_Data(Employee_ID, First_Name, Last_Name, General_Experience, Position_Experience, Residence_Address, Work_Phone, Work_Mail, Company_ID, Position_ID)
 		VALUES (83, 'Bianca', 'Santos', 5, 2, 'Rio de Janeiro, Shinnofwa street', 0211302125, 'B.Santos@gmail.com', 5, 10);
 		
-		
 --INSERT TO TABLES Transporter_Ship
 --C = Container Ship
---T =Tanker
+--T = Tanker
 INSERT INTO Transporter_Ship(Ship_ID, Ship_Name, Ship_Type, Decks_Number, Containers_Maximum_Number, Carrying, Company_ID)
-		VALUES (1, 'Lamai', 'Ñ', 1, 10000, 11000000, 1)
+		VALUES (1, 'Lamai', 'C', 1, 10000, 11000000, 1)
 		
 INSERT INTO Transporter_Ship(Ship_ID, Ship_Name, Ship_Type, Decks_Number, Containers_Maximum_Number, Carrying, Company_ID)
-		VALUES (2, 'Dayrel', 'Ñ', 1, 12500, 14700000, 2)
+		VALUES (2, 'Dayrel', 'C', 1, 12500, 14700000, 2)
 		
 INSERT INTO Transporter_Ship(Ship_ID, Ship_Name, Ship_Type, Decks_Number, Containers_Maximum_Number, Carrying, Company_ID)
 		VALUES (3, 'Talaio', 'T', 2, 0, 318000000, 3)
@@ -335,3 +329,25 @@ INSERT INTO Transporter_Ship(Ship_ID, Ship_Name, Ship_Type, Decks_Number, Contai
 
 INSERT INTO Transporter_Ship(Ship_ID, Ship_Name, Ship_Type, Decks_Number, Containers_Maximum_Number, Carrying, Company_ID)
 		VALUES (6, 'Ainola', 'C', 2, 14200, 11100000, 5)
+
+
+--INSERT TO TABLES Order_Data
+
+INSERT INTO Order_Data(Order_ID, Departure_Address, Arrival_Address, Total_Mass_Of_Cargo, Order_Cost, Time_And_Date_Of_Departure, Time_And_Date_Of_Arrival, Container_Type_ID, Company_ID, Client_ID, Ship_ID)
+		VALUES (1, 'New York', 'Moskow', 5000, 7000, '05/02/2020 21:30', '06/02/2020 23:45', 6, 2, 1, 5)
+
+INSERT INTO Order_Data(Order_ID, Departure_Address, Arrival_Address, Total_Mass_Of_Cargo, Order_Cost, Time_And_Date_Of_Departure, Time_And_Date_Of_Arrival, Container_Type_ID, Company_ID, Client_ID, Ship_ID)
+		VALUES (2, 'Saint-Petersburg', 'Tokyo', 1000, 5000, '21/07/2020 17:00', '25/07/2020 03:05', 8, 5, 3, 3)
+		
+INSERT INTO Order_Data(Order_ID, Departure_Address, Arrival_Address, Total_Mass_Of_Cargo, Order_Cost, Time_And_Date_Of_Departure, Time_And_Date_Of_Arrival, Container_Type_ID, Company_ID, Client_ID, Ship_ID)
+		VALUES (3, 'Sidney', 'Buenos Aires', 11000, 29000, '10/05/2020 12:30', '06/02/2020 23:45', 4, 4, 2, 6)
+
+		
+INSERT INTO Order_Data(Order_ID, Departure_Address, Arrival_Address, Total_Mass_Of_Cargo, Order_Cost, Time_And_Date_Of_Departure, Time_And_Date_Of_Arrival, Container_Type_ID, Company_ID, Client_ID, Ship_ID)
+		VALUES (4, 'Los Angeles', 'Paris', 4000, 20000, '11/02/2020 00:30', '20/02/2020 23:45', 7, 1, 4, 1)
+		
+INSERT INTO Order_Data(Order_ID, Departure_Address, Arrival_Address, Total_Mass_Of_Cargo, Order_Cost, Time_And_Date_Of_Departure, Time_And_Date_Of_Arrival, Container_Type_ID, Company_ID, Client_ID, Ship_ID)
+		VALUES (5, 'Rome', 'Omsk', 15000, 42000, '14/04/2020 00:00', '22/05/2020 13:17', 2, 5, 6, 2)
+
+INSERT INTO Order_Data(Order_ID, Departure_Address, Arrival_Address, Total_Mass_Of_Cargo, Order_Cost, Time_And_Date_Of_Departure, Time_And_Date_Of_Arrival, Container_Type_ID, Company_ID, Client_ID, Ship_ID)
+		VALUES (6, 'Tokyo', 'Paris', 5000, 28900, '11/11/2020 11:11', '01/12/2020 15:00', 1, 3, 5, 4)*/
