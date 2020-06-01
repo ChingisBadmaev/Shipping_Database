@@ -1,7 +1,3 @@
------------------------------------
--- CREATE VIEW
-----------------------------------
-
 CREATE VIEW CEO_company(First_Name, Last_Name, Company) AS
 SELECT ed.First_Name, ed.Last_Name, pc.Company_Name
 	FROM Employee_Data ed, Position p, Performer_Company pc
@@ -33,8 +29,15 @@ SELECT ed.First_Name, ed.Last_Name, pc.Company_Name
 	AND ed.Position_ID = p.Position_ID
 	AND p.Position_name = 'Ñaptain of the ship'
 
+CREATE VIEW average_age_employees(Average_Age, Company_Name) AS
+SELECT AVG(CONVERT(FLOAT, ed.General_Experience)), pc.Company_Name
+	FROM Employee_Data ed, Performer_Company pc
+	WHERE ed.Company_ID = pc.Company_ID
+	GROUP BY pc.Company_Name, ed.Company_ID
 	
-
-
-
-
+CREATE VIEW order_ship_company(Customer_First_Name, Customer_Last_Name,	Carrier_Ship_Name, Performer_Company_Name) AS
+SELECT cd.First_Name, cd.Last_Name, ts.Ship_Name, pc.Company_Name
+	FROM Client_Data cd, Order_Data od, Transporter_Ship ts, Performer_Company pc
+	WHERE cd.Client_ID = od.Client_ID AND od.Ship_ID = ts.Ship_ID
+	AND ts.Company_ID = pc.Company_ID
+	
