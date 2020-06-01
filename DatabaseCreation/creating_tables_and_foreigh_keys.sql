@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 -- ÑREATE TABLE AND PK
 ---------------------------------------------------------------
-/*
+
 CREATE TABLE Order_Data(  
 	Order_ID						INTEGER		NOT NULL,
 	Departure_Address				VARCHAR(50) NOT NULL,
@@ -125,4 +125,4 @@ ALTER TABLE Employee_Data ADD CONSTRAINT FK_Employee_Data_Position
 ;
 
 
-*/
+

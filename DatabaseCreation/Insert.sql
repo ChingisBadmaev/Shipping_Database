@@ -48,6 +48,7 @@ INSERT INTO Position(Position_ID, Position_Name)	VALUES (7, 'Port worker');
 INSERT INTO Position(Position_ID, Position_Name)	VALUES (8, 'Accountant');
 INSERT INTO Position(Position_ID, Position_Name)	VALUES (9, 'Engineers');
 INSERT INTO Position(Position_ID, Position_Name)	VALUES (10, 'Ship doctor');
+INSERT INTO Position(Position_ID, Position_Name)	VALUES (11, 'Unemployed');
 
 
 --INSERT TO TABLES Employee_Data
@@ -83,16 +84,16 @@ INSERT INTO Employee_Data(Employee_ID, First_Name, Last_Name, General_Experience
 		VALUES (10, 'William', 'Moore', 13, 8, 'New Yourk, Yewew street', 16565489311, 'WilliamMoore@mail.ru', 1, 7);
 
 INSERT INTO Employee_Data(Employee_ID, First_Name, Last_Name, General_Experience, Position_Experience, Residence_Address, Work_Phone, Work_Mail, Company_ID, Position_ID)
-		VALUES (11, 'Alexander', 'Smith', 5, 1, 'New Yourk, Qmon street', 16464564500, 'AlexanderSmith@mail.ru', 1, 7);
+		VALUES (11, 'Alexander', 'Smith', 5, 1, 'New Yourk, Qmon street', 16464564500, 'A.Smith@mail.ru', 1, 7);
 
 INSERT INTO Employee_Data(Employee_ID, First_Name, Last_Name, General_Experience, Position_Experience, Residence_Address, Work_Phone, Work_Mail, Company_ID, Position_ID)
-		VALUES (12, 'Michael', 'Taylor', 20, 1, 'New Yourk, Bazarnaya street', 15540011648, 'MichaelTaylor@mail.ru', 1, 7);
+		VALUES (12, 'Michael', 'Taylor', 20, 1, 'New Yourk, Bazarnaya street', 15540011648, 'M.Taylor@mail.ru', 1, 7);
 
 INSERT INTO Employee_Data(Employee_ID, First_Name, Last_Name, General_Experience, Position_Experience, Residence_Address, Work_Phone, Work_Mail, Company_ID, Position_ID)
 		VALUES (13, 'Jayden', 'Davis', 17, 11, 'New Yourk, Vekopth street', 11236548822, 'JaydenDavis@mail.ru', 1, 7);
 
 INSERT INTO Employee_Data(Employee_ID, First_Name, Last_Name, General_Experience, Position_Experience, Residence_Address, Work_Phone, Work_Mail, Company_ID, Position_ID)
-		VALUES (14, 'James', 'Anderson', 13, 7, 'New Yourk, Imon street', 14852965294, 'JamesAnderson@mail.ru', 1, 7);
+		VALUES (14, 'James', 'Anderson', 13, 7, 'New Yourk, Imon street', 14852965294, 'J.Anderson@mail.ru', 1, 7);
 
 INSERT INTO Employee_Data(Employee_ID, First_Name, Last_Name, General_Experience, Position_Experience, Residence_Address, Work_Phone, Work_Mail, Company_ID, Position_ID)
         VALUES (15, 'Daniel', 'Thomas', 15, 14, 'New Yourk, Light street', 13503899285, 'DanielThomas@mail.ru', 1, 7);
@@ -350,4 +351,4 @@ INSERT INTO Order_Data(Order_ID, Departure_Address, Arrival_Address, Total_Mass_
 		VALUES (5, 'Rome', 'Omsk', 15000, 42000, '14/04/2020 00:00', '22/05/2020 13:17', 2, 5, 6, 2)
 
 INSERT INTO Order_Data(Order_ID, Departure_Address, Arrival_Address, Total_Mass_Of_Cargo, Order_Cost, Time_And_Date_Of_Departure, Time_And_Date_Of_Arrival, Container_Type_ID, Company_ID, Client_ID, Ship_ID)
-		VALUES (6, 'Tokyo', 'Paris', 5000, 28900, '11/11/2020 11:11', '01/12/2020 15:00', 1, 3, 5, 4)*/
+		VALUES (6, 'Tokyo', 'Paris', 5000, 28900, '11/11/2020 11:11', '01/12/2020 15:00', 1, 3, 5, 4)
